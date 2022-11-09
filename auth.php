@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include_once '../config/config.php';
+include_once 'config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     if (!empty($_POST['username']) && !empty($_POST['password'])) {
@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
             $_SESSION['user'] = $admin;
             $_SESSION['logged_in'] = 1;
             $_SESSION['success_message'] = "Successfuly";
-            header("Location:index.php");
+            header("Location:index.php"); // here you create you website where you wanna enter.
         } else {
             $_SESSION['error_message'] = "Username or Password are incorrect";
             header("Location:login.php");
