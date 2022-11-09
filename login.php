@@ -23,7 +23,6 @@ if(isset($_SESSION['logged_in'])){
     <div class="login-logo">
         <a><b>DIV</b>BLOG</a>
     </div>
-    <!-- /.login-logo -->
     <div class="card">
         <div class="card-body login-card-body">
             <p class="login-box-msg">Sign in to start your session</p>
